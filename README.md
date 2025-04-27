@@ -14,13 +14,13 @@ cd BankWise-infra
 
 docker compose up --build
 ```
-frontend will be available on: http://localhost:3000
+frontend will be available on: http://localhost:3000  
 backend will be available on: http://localhost:8080/api
 
 ## Updating
 
 ```bash
-	git submodule update --remote --merge
+git submodule update --remote --merge
 
-  docker compose up --build --force-recreate
+docker compose up --build --force-recreate
 ```
