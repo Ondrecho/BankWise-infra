@@ -1,6 +1,9 @@
 [submodule "frontend"]
-	path = frontend
-	url = https://github.com/Ondrecho/BankWise
+    path = frontend
+    url = https://github.com/Ondrecho/BankWise
+    branch = main
+
 [submodule "backend"]
-	path = backend
-	url = https://github.com/Ondrecho/OnlineBanking
+    path = backend
+    url = https://github.com/Ondrecho/OnlineBanking
+    branch = main

@@ -28,9 +28,10 @@ backend will be available on: http://localhost:8080/api
 
 ## Updating
 **In case of changes in submodules**
-1. Merge the updates:
+1. Checkout and pull the updates:
 ```bash
-git submodule update --remote --merge
+git submodule foreach --recursive git checkout main  
+git submodule foreach --recursive git pull
 ```
 2. Rebuild and rerun the compose:
 ```bash
