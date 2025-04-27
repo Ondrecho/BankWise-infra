@@ -12,12 +12,24 @@ This repository manages the local development of the BankWise project via Docker
  ```bash
 git clone --recurse-submodules https://github.com/Ondrecho/BankWise-infra.git
 ```
-2. Set the environment variable in frontend/.env.production
+2. Set the environment variable in .env file in root folder
+
+| Variable | Description |
+|---|---|
+| `SPRING_DATASOURCE_URL` | JDBC connection string for the database |
+| `SPRING_DATASOURCE_USERNAME` | Username for database access |
+| `SPRING_DATASOURCE_PASSWORD` | Password for authentication |
+| `SPRING_JPA_HIBERNATE_DDL_AUTO` | Defines Hibernate schema management |
+| `POSTGRES_DB` | Name of the PostgreSQL database |
+| `POSTGRES_USER` | PostgreSQL user for database operations |
+| `POSTGRES_PASSWORD` | Password for `POSTGRES_USER` |
+
+3. Set the environment variable in frontend/.env.production
 ```
 NEXT_PUBLIC_API_URL=http://localhost:8080/api 
 ```
 
-3. Build and run with Docker:
+4. Build and run with Docker:
 ```bash
 cd BankWise-infra
 
